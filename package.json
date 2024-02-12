@@ -1,0 +1,39 @@
+{
+  "name": "wenxig-blog",
+  "version": "1.0.0",
+  "private": true,
+  "author": "wenxig",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "upload": "surge ./docs/.vitepress/dist wenxig.surge.sh"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@sugarat/theme": "^0.2.20",
+    "autoprefixer": "^10.4.17",
+    "element-plus": "^2.5.5",
+    "lodash-es": "^4.17.21",
+    "postcss": "^8.4.35",
+    "vue": "3.4.18"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "sass": "^1.70.0",
+    "scss": "^0.2.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vitepress": "1.0.0-rc.42"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  }
+}
